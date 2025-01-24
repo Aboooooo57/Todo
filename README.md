@@ -1,18 +1,7 @@
+
 # Django Task Management API
 
 A Django-based Task Management API for creating, retrieving, updating, and deleting tasks. It supports filtering and custom search functionality.
-
----
-
-## Requirements
-
-- **Python**: >= 3.9
-- **Django**: 4.x
-- **Dependencies**:
-  - `django>=4.0,<5.0`
-  - `djangorestframework>=3.14,<4.0`
-  - `django-filter>=23.1,<24.0`
-  - `drf-nested-routers>=0.93.4`
 
 ---
 
@@ -24,11 +13,24 @@ Follow these steps to set up the project:
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
+   ```
+2. **Create a Virtual Environment**
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. **Install Dependencies**:
+   ```bash
    pip install -r requirements.txt
+   ```
+4. **Apply Migrations**:
+   ```bash
    python manage.py migrate
+   ```
+5. **Run the Server**:
+   ```bash
    python manage.py runserver
+   ```
 
 Open your browser and navigate to:
-   http://localhost:{port}/swagger/
+http://localhost:{port}/swagger/
