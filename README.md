@@ -24,3 +24,11 @@ Follow these steps to set up the project:
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   python manage.py migrate
+   python manage.py runserver
+
+Open your browser and navigate to:
+   http://localhost:{port}/swagger/
